@@ -1,0 +1,11 @@
+# OS
+.DS_Store
+
+# Docker
+*.log
+
+# Editor
+.vscode/
+
+# Node (for later backend)
+node_modules/
