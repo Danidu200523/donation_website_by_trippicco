@@ -28,10 +28,10 @@ export default function App() {
     {/* NAV LINKS */}
     <nav>
       <ul style={styles.navLinks}>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#nutribox">NutriBox</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <button className="btn btn-secondary"><a href="#home">Home</a></button>
+        <button className="btn btn-secondary"><a href="#about">About</a></button>
+        <button className="btn btn-secondary"><a href="#nutribox">NutriBox</a></button>
+        <button className="btn btn-secondary"><a href="#contact">Contact</a></button>
       </ul>
     </nav>
 
@@ -52,6 +52,8 @@ export default function App() {
           <button className="btn btn-secondary">Learn More</button>
         </div>
       </section>
+
+     
 
       {/* ABOUT */}
       {/* ABOUT US SECTION */}
@@ -87,6 +89,43 @@ export default function App() {
           alt="Trippicco team helping people"
           style={styles.aboutImage}
         />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+ {/* DONATION OPTIONS SECTION */}
+<section className="section" id="donate-options">
+  <div className="container">
+    <h2 className="section-title">How You Can Help</h2>
+
+    <p style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 50px' }}>
+      Support the Trippicco mission by donating money, food, or your time.
+      Every contribution creates real impact.
+    </p>
+
+    <div style={styles.donateRow}>
+
+      <div style={styles.donateBox}>
+        <div style={styles.donateIcon}>💰</div>
+        <h3>Donate Money</h3>
+        <p>Help us prepare and distribute NutriBoxes to families in need.</p>
+        <button className="btn btn-secondary">Donate Money</button>
+      </div>
+
+      <div style={styles.donateBox}>
+        <div style={styles.donateIcon}>🥫</div>
+        <h3>Donate Food</h3>
+        <p>Provide essential food items for NutriBoxes and distributions.</p>
+        <button className="btn btn-secondary">Donate Food</button>
+      </div>
+
+      <div style={styles.donateBox}>
+        <div style={styles.donateIcon}>🤝</div>
+        <h3>Volunteer</h3>
+        <p>Join Trippicco trips and help communities directly.</p>
+        <button className="btn btn-secondary">Join Us</button>
       </div>
 
     </div>
@@ -147,7 +186,6 @@ export default function App() {
     </div>
   </div>
 </section>
-
 
 
       {/* IMPACT SECTION */}
@@ -401,10 +439,28 @@ impactNumber: {
   fontWeight: '700',
   color: '#2f8f6b',
   marginBottom: '10px'
+},
+donateRow: {
+  display: 'flex',
+  gap: '30px',
+  justifyContent: 'center',
+  flexWrap: 'wrap'
+},
+
+donateBox: {
+  flex: '1',
+  minWidth: '260px',
+  maxWidth: '340px',
+  background: '#ffffff',
+  padding: '35px 30px',
+  borderRadius: '20px',
+  textAlign: 'center',
+  boxShadow: '0 15px 30px rgba(0,0,0,0.1)'
+},
+
+donateIcon: {
+  fontSize: '42px',
+  marginBottom: '15px'
 }
-
-
-
-
 
 }
